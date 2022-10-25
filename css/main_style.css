@@ -1,0 +1,149 @@
+:root {
+	--collapsed: false;
+}
+
+body{
+	background-color: #ffffff;
+	color: black;
+	margin: 3% 5% 3% 5%;
+	min-height:  100%;
+
+	
+	/* does the same thing */
+	font: normal 24px Verdana, Helvetica, sans-serif;
+	line-height: normal;
+}
+
+p {
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Take off ugly stupid underline on anchors*/
+a {
+	text-decoration: none;
+}
+
+
+
+/*Classes*/
+
+.accent_bar {
+	width: 100%;
+	padding: none;
+	height: 10px;
+	margin: none;
+	border: none;
+	background-color: #ae63c9;
+}
+
+
+#active_page {
+	background-color: #c96368;
+}
+/*Changes Active Page color upon hover	*/
+#active_page:hover {
+	background-color: #412448;
+}
+
+/*nav bar image*/
+.navimg {
+	max-height: 18px;
+	padding: none;
+	border: none;
+}
+
+/*Content class for all things under navbar*/
+#content{
+	margin: none;
+	padding: none;
+	width: 100%;
+}
+
+/*Navbar Header Class*/
+
+.navbar_header{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+
+	margin: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 30px;
+	background-color: #26a69a;
+}
+
+/*Navbar Header Anchor settings*/
+.navbar_header a {
+	width: 130px; /*Max width a box can be, used to align boxes nicely*/ 
+	float: right;
+	padding: 0px;
+	margin: 0px 15px 15px 15px;
+	height: 30px;
+	color:  white;
+	text-align: center;
+	font: 24px Arial, Helvetica, sans-serif;
+	background-color: #26a69a;
+
+	/*Neomorphism Box Effect*/
+	border-radius: 9px;
+	box-shadow: 10px 10px 20px #208d83, -10px -10px 20px #2cbfb1;
+
+}
+
+/*Changes navbar active page color*/
+
+/*Changes Navbar Link color upon hover	*/
+.navbar_header a:hover {
+	background-color: #412448;
+}
+/*Makes Navbar Link react upon click*/
+.navbar_header a:active {
+}
+
+/**/
+#menu_button {
+	width: 30px;
+
+}
+
+#home_button {
+	height: 100%;
+	float: left;
+}
+
+/*Navbar(right) settings*/
+.navbar{
+	justify-items: right;
+	padding: 0px 0px 0px 0px;
+	height:  100%;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	overflow: none;
+}
+
+
+/*Navbar collapses halfway, using a second rightrow*/
+@media screen and (max-width: 800px) {
+
+	.navbar a {
+	}
+	.navbar {
+		float: right;
+		width: 160px;
+		background-color: #26a69a;
+		border-bottom-right-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+
+	.grid-container {
+	}
+}
+
+#footer {
+	width: 92%;
+	position:  absolute;
+	bottom:  0;
+	overflow: hidden;
+}

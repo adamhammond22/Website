@@ -1,0 +1,23 @@
+/*grid class*/
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+  	background-color: green;
+    padding: 10px;
+    gap: 10px;
+    margin: 0px 0px 10px 0px;
+}
+.grid-item {
+  background-color: white;
+  padding: 20px;
+  border: 0px;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+.centered-box {
+  width: auto;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}

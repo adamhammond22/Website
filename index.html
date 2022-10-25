@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name=”viewport” content= "width=device-width, initial-scale=1">
+	<title>Adam Hammond</title>
+	<meta name="author" content = "Adam Hammond">
+	<meta name="description" content = "My professional portfolio website!">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid_style.css">
+	<script src="scripts/navbar_script.js"> 
+	</script>
+
+</head>
+
+<body onresize = "NavbarCollapseToggle()">
+	<div class = "accent_bar"> </div>
+	<div class = "navbar_header">
+
+		<span id = "home_button">
+			<a href="index.html" id="active_page"> <img class = "navimg" src="images/home_scaled.png"> Home </a>
+		</span>
+		<span class = "navbar" id = "navbar" collapsed = "false">
+			<a href="#" id = "menu_button" onclick="ActivateMenuToggle()">
+			<img class = "navimg" src="images/menu_scaled.png"> </a>
+			<a href="html/about.html" class = "option"> <img class = "navimg" src="images/about_scaled.png"> About </a>
+			<a href="html/resume.html"class = "option"> <img class = "navimg" src="images/resume_scaled.png"> Resume </a>	
+			<a href="html/projects.html"class = "option"> <img class = "navimg" src="images/projects_scaled.png"> Projects </a>
+			<a href="html/contact.html"class = "option"> <img class = "navimg" src="images/contact_scaled.png"> Contact </a>
+		</span>
+	</div>
+	<div id = "content">
+			<div class = "centered-box">
+				I'm <b>Adam Hammond</b>, a Computer Science student from UC Santa Cruz.
+				I'm interested in Architecture, Data Structures, Algorithms, Statistics, and Networking!
+				Check out my resume, github, and feel free to contact me directly! 
+			</div>
+	</div>
+	<div id = "footer" class = "accent_bar"> </div>	
+<script>
+	MenuButtonDisplayToggle("false")
+	NavbarCollapseToggle()
+</script>
+</body>
+</html>

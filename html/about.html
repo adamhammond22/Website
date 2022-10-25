@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta name="viewport", content="width=device-width, initial-scale=1" >
+	<link rel="stylesheet" type="text/css" href="../css/main_style.css">
+	<script src="../scripts/navbar_script.js"> 
+	</script>
+
+</head>
+
+<body onresize = "NavbarCollapseToggle()">
+	<div class = "navbar_header">
+
+		<span id = "home_button">
+			<a href="../index.html"> <img class = "navimg" src="../images/home_scaled.png"> Home </a>
+		</span>
+		<span class = "navbar" id = "navbar" collapsed = "false">
+			<a href="#" id = "menu_button" onclick="ActivateMenuToggle()">
+			<img class = "navimg" src="images/menu_scaled.png"> </a>
+			<a href="about.html" id="active_page"class = "option"> <img class = "navimg" src="../images/about_scaled.png"> About </a>
+			<a href="resume.html"class = "option"> <img class = "navimg" src="../images/resume_scaled.png"> Resume </a>	
+			<a href="projects.html"class = "option"> <img class = "navimg" src="../images/projects_scaled.png"> Projects </a>
+			<a href="contact.html"class = "option"> <img class = "navimg" src="../images/contact_scaled.png"> Contact </a>
+		</span>
+	</div>
+	
+<script>
+	MenuButtonDisplayToggle("false")
+	NavbarCollapseToggle()
+</script>
+</body>
+</html>
