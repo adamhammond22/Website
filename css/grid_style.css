@@ -21,3 +21,9 @@
   text-align: center;
   margin: auto;
 }
+.myPicture {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  max-height: 800px;
+}
